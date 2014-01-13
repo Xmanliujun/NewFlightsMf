@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key></key>
+	<array>
+		<string>以下是国内和国际航空公司名称</string>
+		<string>CA中国国际航空公司</string>
+		<string>3U四川航空股份有限公司</string>
+		<string>8C武汉东星航空有限公司</string>
+		<string>8L云南祥鹏航空有限责任公司</string>
+		<string>9C春秋航空有限公司</string>
+		<string>BK奥凯航空有限公司</string>
+		<string>CN大新华航空有限公司</string>
+		<string>CZ中国南方航空公司</string>
+		<string>EU成都航空有限公司</string>
+		<string>FM上海航空有限公司</string>
+		<string>G5华夏航空有限公司</string>
+		<string>GS天津航空有限责任公司</string>
+		<string>HO上海吉祥航空有限公司</string>
+		<string>HU海南航空股份有限公司</string>
+		<string>JD北京首都航空公司</string>
+		<string>JR幸福航空有限责任公司</string>
+		<string>KN中国联合航空有限公司</string>
+		<string>KY昆明航空有限公司</string>
+		<string>MF厦门航空有限公司</string>
+		<string>MU中国东方航空公司</string>
+		<string>NS河北航空有限公司</string>
+		<string>PN西部航空有限责任公司</string>
+		<string>SC山东航空股份有限公司</string>
+		<string>TV西藏航空有限公司</string>
+		<string>VD河南航空有限公司</string>
+		<string>ZH深圳航空有限责任公司</string>
+	</array>
+</dict>
+</plist>

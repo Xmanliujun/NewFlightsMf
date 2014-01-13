@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "HelpViewController.h"
 
 @implementation AppDelegate
 
@@ -16,11 +18,51 @@
     [super dealloc];
 }
 
+-(void)ShowHelpNavigation
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *firstUseApp = [userDefaults objectForKey:@"FirstUseApp"] ;
+    
+    if(firstUseApp == nil)
+    {
+        [userDefaults setValue:@"1" forKey:@"FirstUseApp"];
+        [userDefaults synchronize];
+        
+        HelpViewController* guide = [[HelpViewController alloc] init];
+        
+        self.window.rootViewController = guide;
+        [guide release];
+        
+    }
+    
+    
+    
+    
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *firstUseApp = [userDefaults objectForKey:@"FirstUseApp"] ;
+    
+    if (firstUseApp == nil) {
+       
+        [self ShowHelpNavigation];
+        
+    }else{
+
+    
+    RootViewController *rvc=[[[RootViewController alloc]init]autorelease];
+    
+    self.window.rootViewController=rvc;
+        
+    }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -45,6 +87,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+
+    
+    
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define ShareApp ((AppDelegate * )[[UIApplication sharedApplication] delegate])
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
